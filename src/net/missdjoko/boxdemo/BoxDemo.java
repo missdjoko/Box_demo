@@ -36,10 +36,12 @@ public  class BoxDemo {
         Box mybox1= new Box(10,15,5);
         Box mybox2= new Box();
         Box mycube = new Box(10.2);
+        Box myclone = new Box(mybox1);
 
         System.out.println("mybox1 volume = " + mybox1.volume());
         System.out.println("mybox2 volume = " + mybox2.volume());
         System.out.println("mycube volume = " + mycube.volume());
+        System.out.println("mycube volume = " + myclone.volume());
 
         
 

@@ -32,4 +32,12 @@ public class Box {
         width = lenght= height = len;
     }
 
+
+    // передача объекта в качестве параметра метода
+    Box(Box ob){
+        width=ob.width;
+        lenght=ob.lenght;
+        height=ob.height;
+    }
+
 }

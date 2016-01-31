@@ -7,41 +7,23 @@ import java.io.*;
  */
 public  class BoxDemo {
     public static void main(String [] args) throws IOException {
-      /*  int i, j, k;
 
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("vvedite shiriny:");
+        BoxWeight mybox1= new BoxWeight(10,15,5,30.5);
+        BoxWeight mybox2= new BoxWeight(5,45,95,0.004);
+        double vol;
 
-        i = Integer.parseInt(reader.readLine());
-        System.out.println("Prinyato \n Vvedite dliny:");
-        j =Integer.parseInt(reader.readLine());
-        System.out.println("Prinyato \n Vvedite vjsoty:");
-        k =Integer.parseInt(reader.readLine());
-        System.out.println("Prinyato");
-        Box mybox1 = new Box(i, j, k);
-        System.out.println("volume mybox1 = " + mybox1.volume() );
+      vol=mybox1.volume();
+      System.out.println("mybox1 ob'em  = " + vol);
+      System.out.println("mybox1 ves  = " + mybox1.weight);
 
-        System.out.println("vvedite shiriny: ");
-        i =Integer.parseInt(reader.readLine());
-        System.out.println("Prinyato \n Vvedite dliny:");
-        j =Integer.parseInt(reader.readLine());
-        System.out.println("Prinyato \n Vvedite vjsoty:");
-        k =Integer.parseInt(reader.readLine());
-        System.out.println("Prinyato");
-        Box mybox2 = new Box(i, j, k);
+      System.out.println();
 
-        System.out.println(" volume mybox2 = " + mybox2.volume());*/
+      vol=mybox2.volume();
 
-        Box mybox1= new Box(10,15,5);
-        Box mybox2= new Box();
-        Box mycube = new Box(10.2);
-        Box myclone = new Box(mybox1);
+      System.out.println("mybox2 ob'em = "+ vol);
+      System.out.println("mybox2 ves = " + mybox2.weight);
 
-        System.out.println("mybox1 volume = " + mybox1.volume());
-        System.out.println("mybox2 volume = " + mybox2.volume());
-        System.out.println("mycube volume = " + mycube.volume());
-        System.out.println("mycube volume = " + myclone.volume());
 
         
 

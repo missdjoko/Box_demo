@@ -9,9 +9,9 @@ public class Box {
     double height;
 
    double volume(){
-
        return width*lenght*height;
    }
+
 
     Box( double i, double j, double k){
         System.out.println(" Constructor is complete ");
@@ -38,6 +38,20 @@ public class Box {
         width=ob.width;
         lenght=ob.lenght;
         height=ob.height;
+    }
+
+}
+
+class BoxWeight extends Box{
+    double weight;
+
+    // конструктор
+    BoxWeight(double w,double h,double l, double m){
+        width=w;
+        height=h;
+        lenght=l;
+        weight=m;
+
     }
 
 }

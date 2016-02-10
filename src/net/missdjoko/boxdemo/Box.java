@@ -4,9 +4,9 @@ package net.missdjoko.boxdemo;
  * Created by Miss_ on 08.10.2015.
  */
 public class Box {
-    double width;
-    double lenght;
-    double height;
+   private double width;
+    private double lenght;
+    private double height;
 
    double volume(){
        return width*lenght*height;
@@ -47,11 +47,14 @@ class BoxWeight extends Box{
 
     // конструктор
     BoxWeight(double w,double h,double l, double m){
-        width=w;
-        height=h;
-        lenght=l;
-        weight=m;
+       super (w,h,l); // инициализация переменных в конструкторе от суперкласса без их объявления
+        weight=m;     // без проблем инициализирует поля private
 
+    }
+
+    BoxWeight(BoxWeight ob){
+        super(ob);
+        weight= ob.weight;
     }
 
 }

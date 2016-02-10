@@ -10,7 +10,8 @@ public  class BoxDemo {
 
 
         BoxWeight mybox1= new BoxWeight(10,15,5,30.5);
-       // BoxWeight mybox2= new BoxWeight(5,45,95,0.004);
+        BoxWeight mybox2= new BoxWeight(5,45,95,0.004);
+       // BoxWeight mybox3 =new BoxWeight(mybox1);
         Box bx = new Box();
         double vol;
 
@@ -20,11 +21,11 @@ public  class BoxDemo {
 
       System.out.println();
 
-      /*vol=mybox2.volume();
+      vol=mybox2.volume();
 
       System.out.println("mybox2 ob'em = "+ vol);
       System.out.println("mybox2 ves = " + mybox2.weight);
-*/
+
         bx=mybox1;
         vol=bx.volume();
         System.out.println("bx ob'em  = " + vol);

@@ -57,4 +57,32 @@ class BoxWeight extends Box{
         weight= ob.weight;
     }
 
+    BoxWeight(){
+        super();
+        weight=-1;
+            }
+
+
+
 }
+
+class Shipment extends BoxWeight{
+   double cost;
+
+    Shipment(double w,double h, double l, double m, double c){
+        super(w,h,l,m);
+        cost=c;
+    }
+
+    Shipment(Shipment sh){
+        super(sh);
+        cost = sh.cost;
+    }
+
+    Shipment(){
+        super();
+        cost= -1;
+    }
+}
+
+
